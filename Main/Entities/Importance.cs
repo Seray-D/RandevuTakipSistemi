@@ -1,11 +1,9 @@
 ﻿namespace Main.Entities
 {
-    public class Importance
-
+    public enum Importance
     {
-
-
-
-        //kgjvjbghvbjkhb
+        Low,
+        Medium,
+        High
     }
 }
