@@ -1,9 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using Main.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+// Veritabanı bağlantı servisini buraya ekliyoruz:
+builder.Services.AddDbContext<Main.Data.AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapibuilder.Services.AddOpenApi();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();

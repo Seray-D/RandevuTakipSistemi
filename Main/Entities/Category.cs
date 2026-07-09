@@ -1,4 +1,6 @@
-﻿namespace Main.Entities
+﻿using System.Reflection.Metadata;
+
+namespace Main.Entities
 {
     public class Category
     {
