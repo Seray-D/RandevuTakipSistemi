@@ -10,7 +10,7 @@ namespace Main.Data
 
         
         public DbSet<Appointment> Appointments { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public Dbgit add.Set<Category> Categories { get; set; }
         public DbSet<Note> Notes { get; set; }
     }
 }
