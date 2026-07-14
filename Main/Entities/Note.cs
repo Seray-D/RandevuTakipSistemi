@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Main.Enums;
+using System;
 
 namespace Main.Entities
 {

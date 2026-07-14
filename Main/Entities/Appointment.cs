@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Main.Enums;
 
 namespace Main.Entities
 {
@@ -8,6 +8,8 @@ namespace Main.Entities
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public string Status { get; set; } = "Yeni";
+
+        
+        public AppointmentStatus Status { get; set; } = AppointmentStatus.New;
     }
 }
